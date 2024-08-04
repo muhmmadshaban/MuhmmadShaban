@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main(){
+    //THIS PROGRAM IS F0R SORTING THE INPUT VALUES FROM USER IN ASCENDING ORDER
+int n;
+cout<<"Enter the size of the array"<<endl; //TAKE SIZE OF ARRAY FROM USER
+cin>>n;
+ int array[n]; //DECLARATION OF ARRAY
+ for(int i=0;i<n;i++){
+    cout<<"Enter the elements of the array"<<endl; // TAKING INPUT OF ELEMENTS OF ARRAY FROM USER
+    cin>>array[i];
+ }
+
+ for(int i=0;i<n-1;i++){ // THIS LOOP IS NECESSARY FOR SORTING THE VALUES
+    for (int j=i+1;j<n;j++){
+        if(array[j]<array[i]){
+            int temp=array[j];// DECLARE TEMPORARY VARIABLE CAREFULLY, ITS VERY IMPORTANT
+            array[j]=array[i];
+            array[i]=temp;
+        }
+    }
+ }
+
+    cout<<"The sorted order is ";// THIS LOOP IS FOR PRINT THE VALUES OF ARRAY
+    for(int i=0;i<n;i++){
+        cout<<array[i] << " ";
+    }
+    cout<<endl; // DONT FORGET TO FLUSH THE OUTPUT BUFFER
+    return 0;
+}
