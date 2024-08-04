@@ -1,0 +1,28 @@
+//PRINTING THE MATRIX WITH THE HELP OF 2D ARRAY
+#include<iostream>
+using namespace std;
+int main (){
+int row,col;
+cout<<"Enter the rows of the matrix"<<endl;
+cin>>row;
+cout<<"Enter the column of the matrix"<<endl;
+cin>>col;
+int arr[row][col];
+
+//This LOOP is to take input from user
+for(int i=0;i<row;i++){
+for(int j=0;j<col;j++){
+cout<<"Enter the Element of the Matrix: "<<endl;
+cin>>arr[i][j];
+	}
+}
+//THIS LOOP IS TO PRINT THE ELEMENTS OF THE MATRIX
+cout<<"The Matrix is : "<<endl;
+for(int i=0;i<row;i++){
+for(int j=0;j<col;j++){
+cout<<arr[i][j]<<" ";
+}
+cout<<endl;
+}
+return 0;
+}
