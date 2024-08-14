@@ -1,0 +1,13 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+//APPEND TWO STRING USING + operator
+string s1="fam";
+string s2="ily";
+
+cout<<s1+s2<<endl;// OUTPUT : family
+
+
+    return 0;
+}
