@@ -1,0 +1,13 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+//APPEND TWO STRING USING APPEND FUCTION
+string s1="fam";
+string s2="ily";
+s1.append(s2);
+cout<<s1<<endl;// OUTPUT : family
+
+
+    return 0;
+}
