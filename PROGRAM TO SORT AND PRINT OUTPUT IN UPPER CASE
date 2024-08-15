@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+// MAKING A PROGRAM WHICH TAKE RANDOM INPUT FROM USER AND 
+// IF IT IS IN LOWER CASE CONVERT THIS INTO UPPER CASE AND THE SORT THAT STRING in ascending order;
+string input;
+cout<<"ENTER THE INPUT "<<endl;
+getline(cin,input); // TAKING INPUT FROM USER
+// FIRST OF ALL WE CONVERT LOWER TO UPPER CASE 
+for(int i=0;i<input.size();i++){
+// here we are doing some amazing code 
+if(input[i]>='a'&&input[i]<='z'){
+    input[i]-=32;
+    }
+    }
+//NOW SORT THIS USING SELECTION SORTING, WE CAN ALSO DO THIS BY SORT FUNCTION
+for(int i=0;i<input.size()-1;i++){
+    for(int j=i+1;j<input.size(); j++){
+    if(input[i]>input[j]){
+        char temp= input[j];
+        input[j]= input[i];
+        input[i]=temp;
+            }
+    }
+}
+cout<<"THE SORTED AND UPPER CASE STRING IS BELOW: "<<endl;
+for(int i=0;i<input.size();i++){
+cout<<input[i]<<" " ;
+}
+cout<<endl;
+  return 0;
+}
