@@ -1,0 +1,29 @@
+#include<iostream>
+#include<algorithm>// SORT FUCTION IS USED FROM ALGORITHM HRADER FILE
+#include<string>
+using namespace std;
+int main(){
+//SORTNG OF THE STRINNG 
+string s1="zxcvdbnmlkjhgfsaqwertyuiop"; // COMPLETE A TO Z
+cout<<s1.size()<<endl;
+int n=s1.size();
+// SORTING OF THE STRINNG USING SELECTION SORTING METHOD
+for(int i=0;i<n-1;i++){
+    for(int j=i+1;j<n;j++){
+        if(s1[i]>s1[j]){
+            char temp=s1[j];
+            s1[j]=s1[i];
+            s1[i]=temp;
+        }
+    }
+}
+// TO PRINT THE SORTED STRING
+for(int i=0;i<n;i++){
+    cout<<s1[i] <<" "; //OUTPUT : a b c ... x y z
+}
+cout<<endl;
+// SORTING OF THE STRINNG USING SORT FUNCTION
+sort(s1.begin(), s1.end());
+cout<<s1<<endl; //OUTPUT : abc..xyz
+ return 0;
+    }
