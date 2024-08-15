@@ -1,0 +1,25 @@
+#include<iostream>
+#include<algorithm>// SORT FUCTION IS USED FROM ALGORITHM HRADER FILE
+#include<string>
+
+// making functios
+using namespace std;
+int main(){
+//CONVERTING THE UPPER CASE INTO LOWERCASE AND LOWER CASE INTO UPPER CASE
+
+string s1="zxcvdbnmlkjhgfsaqwertyuiop"; // COMPLETE A TO Z
+// THE DIFFERNCE BETWEEN a-A IS 32;
+ for(int i=0;i<s1.size(); i++){
+    s1[i] -=32;
+
+ }
+ cout<<s1<<endl;// THIS PRINT UPPER CASE
+
+//THIS LOOP IS TO CONVERT UPPER CASE TO LOWER CASE
+ for(int i=0;i<s1.size(); i++)
+{
+    s1[i]+=32; 
+} 
+cout<<s1<<endl; //THIS PRINT LOWER CASE
+ return 0;
+    }
