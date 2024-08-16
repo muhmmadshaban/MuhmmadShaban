@@ -1,0 +1,43 @@
+
+#include<iostream>
+using namespace std;
+int main(){
+int x;
+cout<<"ENTER THE NUMBER"<<endl;
+cin>>x;
+int orignal=x; // TO STORE ORIGINAL VALUE OF X(WHICH IS ENTERED BY USER)
+int ans=0; 
+int lastdigit; 
+
+for(int i = x;  i > 0; i = i / 10) {   
+
+   lastdigit= i%10;
+    ans= ans + lastdigit*lastdigit*lastdigit;    
+}
+if(ans==orignal){
+    cout<<"ARMSTRONG NUMBER "<<endl;
+    }
+    else{
+        cout<<"NOT AN ARMSTRONG NUMBER"<<endl;
+    }
+    return 0;
+}
+
+
+
+/* OUTPUT */
+ // for example : x=153 >>  153 is more than 0, condition is true,
+                            //we get last digit 3, as 153%10 = 3
+                           // we have formula ans = ans + lastdigit*lastdigit*lastdigit;
+                            // ans = 0 + 3 * 3* 3= 27  because previous value of ans = 0
+                            // now condition update and x become 15 because 153/10 = 15 in integers. and ans= 27
+                            // now x=15 and 15 > 0 and condition is true,
+                            // we get 5, as 15%10 = 5
+                           // now  ans = 27 + 5*5*5= 152 // because previous value of ans = 27
+                            // now condition update and x become 1 because 15/10 = 1  in integers. and ans= 152
+                            // now x = 1  is more the 0  and  condition is true.
+                            // we get 1, as 1%10 = 1 
+                            //  ans=152 + 1* 1* 1= 153
+                            // now check the condition is
+                            // ans = orignal value of x, if yes print Armstrong number , else print not Armstrong number
+
