@@ -1,0 +1,30 @@
+// THIS PROGRAM IS FOR ADD TWO COMPLEX NUMBER
+#include<iostream>
+using namespace std;
+class COMPLEX{
+    int a, b;
+        public:
+    void setNumber(int n1,int n2){
+       a=n1;
+       b=n2;      
+    }
+    void print(){
+        cout<<"THE NUMBER IS "<<a <<" + "<<b<<"i"<<endl;
+    }
+    } ;
+    COMPLEX SumComplex(COMPLEX S1,COMPLEX S2){
+        COMPLEX S3;
+        S3.setNumber((S1.a+S2.a),(S1.b+S2.b));
+        return S3;
+    }
+int main()
+{
+COMPLEX C1,C2,sum;
+C1.setNumber(2,5);
+C2.setNumber(4,9);
+C1.print();
+C2.print();
+sum=SumComplex(C1,C2);
+sum.print();
+return 0;
+}
