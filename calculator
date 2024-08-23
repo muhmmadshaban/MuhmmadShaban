@@ -1,0 +1,78 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+float a,b, result; // USING FLOAT DATA TYPE FOR CONTROL DIVISION VALUE
+char operation; // CHARACTOR DATATYPE USED FOR {(A TO Z),(a to z), (*,&,^,%,$,#, etc)}
+cout<<"ENTER THE NUMBER1 : ";
+cin>>a;                 // TAKE VALUE OF A
+cout<<"ENTER THE NUMBER2 : ";
+cin>>b;                 // TAKE VALUE OF B
+cout<<"ENTER THE ARITHMATTIC OPERATOR (+ - / *) ";
+cin>>operation;    
+
+// SWITCH STATEMENT START FROM HERE
+ switch ( operation)
+ {
+ case  '+':                    // IF USER ENTER +
+    result=a+b;
+ cout<<"THE SUM IS "<<result;
+    break;
+ case  '-':                    // IF USER ENTER -
+    result=a-b;
+ cout<<"THE SUBTRACTION IS "<<result;
+    break;
+ case  '*':                  // IF USER ENTER *
+    result=a*b;
+ cout<<"THE MULTIPLICATION IS "<<result;
+    break;
+ case '/':                   // IF USER ENTER /
+    result=a/b;
+ cout<<"THE DIVISION IS "<<result;
+    break;
+ 
+
+ default:                    // IF USER ENTER ANY OTHER VALUE
+ cout<<"ENTER THE CORRECT OPERATOR"<<endl;
+    break;
+ }
+
+    return 0;
+}
+
+
+/*
+OUTPUT// EXECUTION OF THE SWITCH
+IF USER ENTER
+ NUMBER1 = 6 THAT MEAN a=6
+ NUMBER2 = 5  THAT MEAN b=5
+ AND ENTER OPERATOR  + THAT MEAN operation ='+'
+THEN.
+THE SUM IS 11,
+EXECUTED
+IF USER ENTER
+ NUMBER1 = 6 THAT MEAN a=6
+ NUMBER2 = 5  THAT MEAN b=5
+ AND ENTER OPERATOR  - THAT MEAN operation ='-'
+THEN.
+THE SUBTRACTION IS 1,
+EXECUTED
+
+IF USER ENTER
+ NUMBER1 = 6 THAT MEAN a=6
+ NUMBER2 = 5  THAT MEAN b=5
+ AND ENTER OPERATOR  *  THAT MEAN operation ='*'
+THEN.
+THE MULTIPLICATION IS 30,
+EXECUTED
+
+
+IF USER ENTER
+ NUMBER1 = 6 THAT MEAN a=6
+ NUMBER2 = 5  THAT MEAN b=5
+ AND ENTER OPERATOR  /  THAT MEAN operation ='/'
+THEN.
+THE DIVISION IS 1.2,
+EXECUTED
+*/
