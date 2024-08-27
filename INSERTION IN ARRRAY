@@ -12,7 +12,6 @@ int main()
     }
         cout<<"THE ELEMENTS OF THE ARRAY ARE: "<<endl;
         for (int i=0;i<n;i++){
-        
         cout<<arr[i]<<" ";
     }
     cout<<endl;
@@ -27,12 +26,9 @@ int main()
           }
          arr[x-1]=y;
           n++;
-
     cout<<"THE ELEMENT OF THE ARRAY ARE: "<<endl;
     for(int i=0;i<n;i++){
-         cout<<arr[i]<<" ";
-        
+         cout<<arr[i]<<" "; 
       }
-
     return 0;
 }
