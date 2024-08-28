@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+class Complex; //FORWARD DECLARATION
+class Calculator
+{
+private:
+ 
+public:
+  int sum(int a,int b){
+    return(a+b);
+  } 
+  int sumReal(Complex,Complex);
+  
+  /*int sumCom(Complex o1,Complex o2){
+    return(o1.b+o2.b);
+  }*/
+};
+class Complex{
+    //MAKING FRIEND CLASS AND GIVING ACCESS OF PRIVATE VALUES TO THE FRIEND CLASS'S FUNCTION
+    friend int Calculator :: sumReal(Complex o1,Complex o2);
+    //friend int Calculator :: sumCom(Complex o1,Complex o2);
+    int a;
+    int b;
+    public:
+    void setdata(int v1,int v2){
+        a=v1;
+        b=v2;
+    }
+    void getData(void){
+        cout<<a <<" + "<<b<<"i"<<endl;
+    }
+};
+int Calculator :: sumReal(Complex o1,Complex o2){
+    return (o1.a+o2.a); 
+  }
+int main()
+{
+    Complex c1,c2;
+    c1.setdata(2,3);
+    c2.setdata(6,2);
+    
+    c1.getData();
+    c2.getData();
+    
+    Calculator cal;
+    
+    int res=cal.sumReal(c1,c2);
+    cout<<"THE SUM OF REAL PART OF THE COMPLEX NUMBER IS "<<res<<endl;
+    
+    return 0;
+}
