@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+// SWAPPPING THE PRIVATE VALUE OF BOTH CLASS
+class C2;
+class C1{
+    int val;
+    public:
+    void indata(int a){
+        val=a;
+    }
+  friend void swap( C1 & ,C2 &);
+    void display(void){
+        cout<<"THE VALUE OF c1 IS "<<val<<endl;
+    }
+};
+class C2{
+    int val2;
+    public:
+    
+    friend void swap( C1 & ,C2 &);
+    void indata(int a){
+        val2=a;
+    }
+    void display(void){
+        cout<<"THE VALUE OF c2 IS "<<val2<<endl;
+    }
+};
+void swap(C1 &x,C2 &y){
+    int temp=x.val;
+    x.val=y.val2;
+    y.val2=temp;
+}
+int main()
+
+{
+    C1 r;
+    r.indata(44);
+    r.display();  
+    C2 s;
+    s.indata(11);
+    s.display();
+    swap(r,s);
+    cout<<"THE VALUE OF C1 AFTER SWAPPING IS "<<endl;
+    r.display();
+    cout<<"THE VALUE OF C2 AFTER SWAPPING IS "<<endl;
+    s.display();
+
+    return 0;
+}   
