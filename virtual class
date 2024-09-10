@@ -1,0 +1,66 @@
+/* VIRTUAL BASE CLASS
+*/
+
+#include<iostream>
+using namespace std;
+class Student{
+    protected:
+    int roll_no;
+    public:
+    void set_roll(int a){
+        roll_no=a;
+    }
+    void show(){
+        cout<<"THE ROLL NUMBER IS "<<roll_no<<endl;
+    }
+
+};
+class Test: virtual public Student{
+    protected:
+    float maths;
+    float physics;
+    public:
+    void set_marks(float a, float b){
+        maths=a;
+        physics=b;
+    }
+    void show_marks(){
+        cout<<"THE MARKS ARE BELOW "<<endl
+            <<"MATHS : " <<maths<<endl
+            <<"PHYSICS : "<<physics<<endl;
+    }
+};
+class Sports: virtual public Student{
+    protected:
+    float score;
+    public:
+    void set_score(float sc){
+        score=sc;
+    }
+    void show_score(){
+        cout<<"YOUR'S PT SCORE IS "<<score<<endl;
+    }
+};
+
+
+
+class Result : public Test,public Sports{
+protected:
+float total;
+public:
+void show_result(){
+    show();
+    show_marks();
+    show_score();
+    cout<<"THE TOTAL MARKS OBTAINED BY THE STUDENT HAVE ROLL NUMBER "<<roll_no<<" is "<<physics+maths+score<<endl;
+}
+};
+int main()
+{
+    Result shaban;
+    shaban.set_roll(121);
+    shaban.set_marks(50,50);
+    shaban.set_score(45);
+    shaban.show_result();
+    return 0;
+}
