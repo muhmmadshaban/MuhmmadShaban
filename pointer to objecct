@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+class Complex{
+int real, imaginary;
+public:
+
+
+void getdata(){
+cout<<"THE REAL PART IS "<<real<<endl;
+cout<<"THE IMAGINARY PART IS "<<imaginary<<endl;
+
+}
+void setData(int a,int b){
+real=a;
+imaginary=b;
+}
+};
+int main(){
+//Complex c1;
+/*Complex *ptr= &c1;*/
+Complex *ptr=new Complex;
+//(*ptr).setData(31,32);
+// arrow operators
+ptr->setData(21,43);
+ptr->getdata();
+
+///(*ptr).getdata();
+
+return 0;
+}
+
