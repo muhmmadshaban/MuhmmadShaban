@@ -1,0 +1,24 @@
+      //THIS POINTER IN CPP 
+// 12 SEPTEMBER 2024
+#include<iostream>
+using namespace std;
+/*
+THIS IS THE KEYWORD EHICH IS A POINTER WHICH POINT 
+TO THE OBJECT WHICH INVOKES THE MEMBER FUNCTION*/
+class A{
+int a;
+public:
+void set(int a){
+this->a=a;
+}
+void get(){
+cout<<a<<endl;
+}
+};
+
+int main (){
+A alpha;
+alpha.set(1);
+alpha.get();
+return 0;
+}
