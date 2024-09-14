@@ -1,0 +1,57 @@
+
+//14 SEPTEMBER 2024
+
+#include <iostream>
+#include <string>
+using namespace std;
+ class Total{
+    protected:
+    string subject;
+    int rate;
+    public:
+    Total(string sub,int rating){
+        subject=sub;
+        rate=rating;
+    }
+   virtual void display(){} 
+ };
+ class Complete : public Total{
+    int day_taken;
+    public:
+    Complete(string sub,int rating,int days):Total(sub,rating){
+        day_taken=days;
+    }
+    void display(){
+        cout<<"THE SUBJECT "<<subject <<" TAKES "<<day_taken<<" DAYS TO COMPLETE WITH RATEING "<<rate<<endl;
+    }
+ };
+ class Incomplete : public Total{
+    int day_need;
+    public:
+    Incomplete(string sub,int rating,int days): Total(sub,rating){
+        day_need=days;
+    }
+    void display(){
+        cout<<"THE SUBJECT "<<subject <<" TAKES MORE "<<day_need<<" DAYS TO COMPLETE THE WORK WITH RATEING "<<rate<<endl;
+    }
+ };
+
+ int main(){
+    string SUB="ENGLISH";
+    int RATING=5;
+    int DAYS=15;
+    Complete Shaban(SUB,RATING,DAYS);
+//
+    //shaban.display();
+    Incomplete rahul(SUB,RATING,DAYS);
+    //rahul.display();
+    //// MAKE TWO POINTER USING TOTAL CLASS
+
+    Total *trial[2];
+    trial[0]=&Shaban;
+    trial[1]=&rahul;
+    trial[0]->display();
+    trial[1]->display();
+    
+    return 0;
+ }
