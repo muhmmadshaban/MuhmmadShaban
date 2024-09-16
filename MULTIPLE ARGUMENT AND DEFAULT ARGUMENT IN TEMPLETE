@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+template <class t1 = int, class t2 = float, class t3 = char>
+class sum
+{
+public:
+    t1 num1;
+    t2 num2;
+    t3 ope;
+    sum(t1 num1, t2 num2, t3 ope)
+    {
+        this->num1 = num1;
+        this->num2 = num2;
+        this->ope = ope;
+    }
+    void Get()
+    {
+        if (ope == '+')
+        {
+            cout << num1 << ope << num2 << " = " << num1 + num2 << endl;
+        }
+        else if (ope == '-')
+        {
+            cout << num1 << ope << num2 << " = " << num1 - num2 << endl;
+        }
+        else if (ope == '*')
+        {
+            cout << num1 << ope << num2 << " = " << num1 * num2 << endl;
+        }
+    }
+};
+int main()
+{
+    sum<> s1(12, 12.3, '*');
+    s1.Get();
+    return 0;
+}
