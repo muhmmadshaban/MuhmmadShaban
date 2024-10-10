@@ -1,0 +1,178 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+void Oct2Hax(string octal)
+{
+    string binary = "";
+    // FIRST CONVER OCTAL TO BIN
+    int i = 0;
+    while (i < octal.size())
+    {
+        char chunk = octal[i];
+        if (chunk == '0')
+        {
+            binary += "000";
+        }
+        else if (chunk == '1')
+        {
+            binary += "001";
+        }
+        else if (chunk == '2')
+        {
+            binary += "010";
+        }
+        else if (chunk == '3')
+        {
+            binary += "011";
+        }
+        else if (chunk == '4')
+        {
+            binary += "100";
+        }
+        else if (chunk == '5')
+        {
+            binary += "101";
+        }
+        else if (chunk == '6')
+        {
+            binary += "110";
+        }
+        else if (chunk == '7')
+        {
+            binary += "111";
+        }
+        i++;
+    }
+    string newbin = "";
+    for (int i = binary.size() - 1; i >= 0; i--)
+    {
+
+        newbin += binary[i];
+        /// 0 0 1 1
+    }
+    // DELETING UNNECCEROSY ZERO
+    for (int i = newbin.size() - 1; i >= 0; i--)
+    {
+        if (newbin[i] == '1')
+        {
+            break;
+        }
+        else if (newbin[i] == '0')
+        {
+            newbin.pop_back();
+        }
+
+        /// 0 0 1 1
+    }
+    string ans = "";
+    for (int i = newbin.size() - 1; i >= 0; i--)
+    {
+
+        ans += newbin[i];
+        /// 0 0 1 1
+    }
+
+   // cout << ans << endl;
+
+    int sizebin = ans.size();
+    if (sizebin % 4 != 0)
+    {
+        int extra = 4 - (sizebin % 4);
+        sizebin = sizebin + extra;
+        for (int i = 0; i < extra; i++)
+        {
+            ans = "0" + ans;
+        }
+        // cout<<endl<<"ADDDED "<<ans<<endl;
+        // cout<<endl<<"ADDDED "<<sizebin<<endl;
+    }
+
+    string hax = "";
+
+    int j = 0;
+    while (j <= sizebin)
+    {
+        string chunk = "";
+        for (int i = 0 + j; i < 4 + j; i++)
+        {
+            chunk += ans[i];
+        }
+
+        if (chunk == "0000")
+        {
+            hax += "0";
+        }
+        else if (chunk == "0001")
+        {
+            hax += "1";
+        }
+        else if (chunk == "0010")
+        {
+            hax += "2";
+        }
+        else if (chunk == "0011")
+        {
+            hax += "3";
+        }
+        else if (chunk == "0100")
+        {
+            hax += "4";
+        }
+        else if (chunk == "0101")
+        {
+            hax += "5";
+        }
+        else if (chunk == "0110")
+        {
+            hax += "6";
+        }
+        else if (chunk == "0111")
+        {
+            hax += "7";
+        }
+        else if (chunk == "1000")
+        {
+            hax += "8";
+        }
+        else if (chunk == "1001")
+        {
+            hax += "9";
+        }
+        else if (chunk == "1010")
+        {
+            hax += "A";
+        }
+        else if (chunk == "1011")
+        {
+            hax += "B";
+        }
+        else if (chunk == "1100")
+        {
+            hax += "C";
+        }
+        else if (chunk == "1101")
+        {
+            hax += "D";
+        }
+        else if (chunk == "1110")
+        {
+            hax += "E";
+        }
+        else if (chunk == "1111")
+        {
+            hax += "F";
+        }
+        j = j + 4;
+    }
+
+    cout << endl
+         << hax << endl;
+}
+
+int main()
+{
+    string s = "1111";
+    Oct2Hax(s);
+    return 0;
+}
