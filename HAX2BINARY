@@ -1,0 +1,118 @@
+#include <iostream>
+using namespace std;
+void hax2bin(string hax)
+{
+    string binary = "";
+    int i = 0;
+    while (i < hax.size())
+    {
+        char chunk = hax[i];
+
+        if (chunk == '0')
+        {
+            binary += "0000";
+        }
+        else if (chunk == '1')
+        {
+            binary += "0001";
+        }
+        else if (chunk == '2')
+        {
+            binary += "0010";
+        }
+        else if (chunk == '3')
+        {
+            binary += "0011";
+        }
+        else if (chunk == '4')
+        {
+            binary += "0100";
+        }
+        else if (chunk == '5')
+        {
+            binary += "0101";
+        }
+        else if (chunk == '6')
+        {
+            binary += "0110";
+        }
+        else if (chunk == '7')
+        {
+            binary += "0111";
+        }
+        else if (chunk == '8')
+        {
+            binary += "1000";
+        }
+        else if (chunk == '9')
+        {
+            binary += "1001";
+        }
+        else if (chunk == 'A')
+        {
+            binary += "1010";
+        }
+        else if (chunk == 'B')
+        {
+            binary += "1011";
+        }
+        else if (chunk == 'C')
+        {
+            binary += "1100";
+        }
+        else if (chunk == 'D')
+        {
+            binary += "1101";
+        }
+        else if (chunk == 'E')
+        {
+            binary += "1110";
+        }
+        else if (chunk == 'F')
+        {
+            binary += "1111";
+        }
+
+        i++;
+    }
+
+    string newbin = "";
+    for (int i = binary.size() - 1; i >= 0; i--)
+    {
+
+        newbin += binary[i];
+        /// 0 0 1 1
+    }
+    // DELETING UNNECCEROSY ZERO
+    for (int i = newbin.size() - 1; i >= 0; i--)
+    {
+        if (newbin[i] == '1')
+        {
+            break;
+        }
+        else if (newbin[i] == '0')
+        {
+            newbin.pop_back();
+        }
+
+        /// 0 0 1 1
+    }
+    string ans = "";
+    for (int i = newbin.size() - 1; i >= 0; i--)
+    {
+
+        ans += newbin[i];
+        /// 0 0 1 1
+    }
+    if (ans.empty())
+    {
+        ans += "0";
+    }
+    cout << ans;
+}
+int main()
+{
+    hax2bin("2F");
+    // Algorithm to Convert Hexadecimal Number to Binary Number
+    return 0;
+}
