@@ -1,141 +1,156 @@
-<h1 align="center">Hello, I'm Muhmmad Shaban</h1>
-<h3 align="center">Machine Learning Engineer | Data Analyst | Web Developer</h3>
+<!-- Modern Dark Themed Animated GitHub Profile README -->
 
 <p align="center">
-  <a href="mailto:mshaban0121@gmail.com"><img src="https://img.shields.io/badge/Gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
-  <a href="https://www.linkedin.com/in/muhmmadshaban"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://github.com/muhmmadshaban"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=700&color=34D399&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Muhmmad+Shaban!;Agentic+AI+Engineer+%7C+Generative+AI+%7C+ML+Researcher;Building+Next-Gen+AI+for+Enterprise+and+Humans;Always+Learning+%7C+Always+Shipping+%7C+Always+Fun" alt="Typing SVG" />
 </p>
 
----
+<div align="center">
+  <img src="https://github.com/muhmmadshaban/finsolve/raw/main/docs/demo.gif" width="425" style="border-radius:16px;box-shadow:0 0 16px #34D39955;"/>
+</div>
 
-## 🏠 Home
+<br>
 
-- 👋 Welcome to my GitHub profile!
-- 💡 I am passionate about building intelligent solutions that make a real-world impact.
-- 🌱 Always learning: Generative AI, LangChain, Streamlit, and advanced ML techniques.
+<div align="center">
+  <a href="mailto:mshaban0121@gmail.com"><img src="https://img.shields.io/badge/-Email-181825?style=for-the-badge&logo=gmail&logoColor=34D399&labelColor=23272F" alt="Email"/></a>
+  <a href="https://www.linkedin.com/in/muhmmadshaban"><img src="https://img.shields.io/badge/LinkedIn-181825?style=for-the-badge&logo=linkedin&logoColor=34D399&labelColor=23272F" alt="LinkedIn"/></a>
+  <a href="https://github.com/muhmmadshaban"><img src="https://img.shields.io/badge/GitHub-181825?style=for-the-badge&logo=github&logoColor=34D399&labelColor=23272F" alt="GitHub"/></a>
+  <a href="https://twitter.com/shabanml"><img src="https://img.shields.io/badge/Twitter-181825?style=for-the-badge&logo=twitter&logoColor=34D399&labelColor=23272F" alt="Twitter"/></a>
+  <a href="https://t.me/shabanml"><img src="https://img.shields.io/badge/Telegram-181825?style=for-the-badge&logo=telegram&logoColor=34D399&labelColor=23272F" alt="Telegram"/></a>
+</div>
 
----
-
-## 👨‍💼 About Me
-
-**Who am I?**
-
-Enthusiastic Computer Science undergraduate with a strong foundation in **Machine Learning** and **Data Analysis**. Actively seeking a Machine Learning or Generative AI internship to apply my skills and gain hands-on industry experience. My interests center around leveraging **LangChain** and **Streamlit** for innovative AI product development.
-
-- 🤖 **Core Skills:** Machine Learning, Data Analysis, Python, LangChain, Streamlit, Web Development
-- 📄 [Download CV](#) <!-- Replace # with your CV link if available -->
-- 🌍 Location: Roorkee, India
-
----
-
-## 🚀 My Projects
-
-### [AI Chatbot Application](#)
-*Created an AI-powered chatbot using Streamlit (frontend) and FastAPI (backend) for seamless interaction with advanced AI models.*
-
-**Tech Stack:** Python, Streamlit, FastAPI, GPT-4, Groq LLaMA
+<br>
+<div align="center">
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg" width="80%" alt="snake-anim" />
+</div>
 
 ---
 
-### [Helmet Detection using YOLOv8](#)
-*Developed a computer vision system to detect helmets on bike riders for road safety using YOLOv8.*
+## 🦾 About Me
 
-**Tech Stack:** Computer Vision, YOLOv8, OpenCV, TensorFlow
+```yaml
+name: Muhmmad Shaban
+role: Agentic AI Engineer | Generative AI | ML Researcher | Data Analyst
+location: Roorkee, India
+mission: "Build modern, secure, and powerful AI solutions for people & enterprises"
+fun_fact: "I break things just to automate fixing them."
+open_to: ["AI/ML internships", "Research collabs", "Open Source", "Agentic/GenAI projects"]
+```
 
 ---
 
-### [Ghibli Image Converter](#)
-*Python-based tool that stylizes images with Studio Ghibli-inspired themes using deep learning.*
+## 🚀 Featured Project
 
-**Tech Stack:** Python, TensorFlow, PIL, Deep Learning
+### <a href="https://github.com/muhmmadshaban/finsolve" style="color:#34D399;">FinSolve — Enterprise Internal Chatbot Platform</a>
+
+<div align="right">
+  <img src="https://github.com/muhmmadshaban/finsolve/raw/main/docs/demo.gif" width="300" style="border-radius:10px;box-shadow:0 0 12px #34D39955;" />
+</div>
+
+**Modern, secure, dark-themed, and role-based chatbot & analytics platform for enterprise teams.**  
+Real-time, context-aware chat from docs, admin dashboards, live vector search, and robust authentication.  
+<details>
+  <summary>Show Features</summary>
+  
+  - 🔐 Role-based login (Engineering, HR, Finance, etc.)
+  - 🧠 Contextual Q&A from tagged docs
+  - 💬 Modern Streamlit chat UI
+  - 📊 Analytics: queries, usage, confidence
+  - 📂 Upload .csv/.md docs, auto-update FAISS Vector DB (Hugging Face)
+  - 👥 Admin: create/delete users, assign roles
+  - 🛡️ Secure session cookies & token auth
+  - 🌙 Dark mode by default!
+</details>
+
+**Tech Stack:**  
+`FastAPI` · `Streamlit` · `FAISS` · `HuggingFace` · `Plotly` · `Pandas` · `Uvicorn` · `HTTP Basic Auth`
+
+```bash
+git clone https://github.com/muhmmadshaban/finsolve.git
+cd finsolve
+pip install -r requirements.txt
+# .env config: ADMIN_ID, ADMIN_PASSWORD, SECRET_KEY, HF_TOKEN
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
+streamlit run app/frontend.py
+```
 
 ---
 
-### [Auto Spray Painter Machine](#)
-*Designed an automated spray painting prototype leveraging Arduino and mechanical automation.*
+## 🌌 Other Projects
 
-**Tech Stack:** Arduino, C++, Hardware, Automation
+| Project | Description | Tech/Stack |
+|---|---|---|
+| [AI Chatbot App](#) | Advanced LLM chatbot | Python, Streamlit, FastAPI, GPT-4 |
+| [Helmet Detection](#) | YOLOv8-based helmet detection | CV, YOLOv8, OpenCV, TensorFlow |
+| [Ghibli Image Converter](#) | Ghibli-style DL image transformation | Python, TensorFlow, PIL |
+| [Auto Spray Painter](#) | Arduino-powered automation | Arduino, C++, Hardware |
+| [DSA Boot](https://github.com/muhmmadshaban/dsa_boot) | DSA practice (C++) | C++ |
+| [Agent Tutorials](https://github.com/muhmmadshaban/agent-tutorials) | Modern AI/GenAI/Agent guides | Python, Jupyter |
+| [DS-RPC-01](https://github.com/muhmmadshaban/ds-rpc-01) | Distributed systems + RPC | Python |
+| [Certifications](https://github.com/muhmmadshaban/Certifications) | Certs & project work | - |
 
 ---
 
 ## 🎓 Education
 
-- **Bachelor of Technology in Computer Science and Engineering**  
-  *COER University, Roorkee*  
-  CGPA: 9.18 (First Semester)  
-  July 2024 - July 2028
+```diff
++ B.Tech, Computer Science & Engineering
+  COER University, Roorkee
+  CGPA: 9.18 (First Sem) | 2024-2028
 
-- **Intermediate 1st Division**  
-  *Atal Utkrisht Government Inter College, Roorkee*
++ Intermediate 1st Division
+  Atal Utkrisht Govt. Inter College, Roorkee
+```
 
 ---
 
 ## 🏆 Achievements
 
-- **IEEE Conference Presentation 2025:**  
-  Presented original research: *"EDS-DPCXT: Efficient Data Security Using a Deque-Based Product Cipher and XOR-Based Transformations"*
-
-- **International Conference (ICMCE 2025):**  
-  Main author, *"Spam Detection with AdaBoost and Random Forest"*
-
-- **ML-Based Research Publications:**  
-  Contributed to conferences and edited volumes.
-
-- **Uttrakhand State Badminton Player:**  
-  State-level competitor and representative.
-
-- **"Cheetah" Title at DcodersSquad:**  
-  Recognized for speed and performance in team projects.
-
-- **Appreciation from HOD of CSE:**  
-  For contributions to DcodersSquad and the department.
-
----
-
-## 📫 Contact Me
-
-|   |   |
-|---|---|
-| **Location** | Roorkee, India |
-| **Email**    | mshaban0121@gmail.com |
-| **Phone**    | 8273185786, 8273016786 |
+- 🥇 **IEEE Conference Presentation 2025:**  
+  "EDS-DPCXT: Efficient Data Security Using a Deque-Based Product Cipher and XOR-Based Transformations"
+- 🥈 **ICMCE 2025:**  
+  "Spam Detection with AdaBoost and Random Forest"
+- 🧑‍🔬 ML-Based Research Publications
+- 🏸 Uttarakhand State Badminton Player
+- ⚡ "Cheetah" @ DcodersSquad
+- 🏅 Appreciation from HOD of CSE
 
 ---
 
 ## 🛠️ Languages & Tools
 
-<p>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40"/>
-  <img src="https://www.vectorlogo.zone/logos/streamlit/streamlit-icon.svg" alt="streamlit" width="40"/>
-  <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="fastapi" width="40"/>
-  <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40"/>
-  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40"/>
-  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40"/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,js,html,css,react,fastapi,streamlit,tensorflow,pytorch,arduino,git,github,linux,vscode,figma,photoshop,pandas,opencv" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/huggingface/huggingface-icon.svg" alt="huggingface" height="40" style="margin-left:10px"/>
 </p>
 
 ---
 
 ## 📈 GitHub Stats
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=muhmmadshaban&show_icons=true&theme=tokyonight&hide_title=true&hide_border=true" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=muhmmadshaban&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide_border=true" alt="langs" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=muhmmadshaban&theme=tokyonight&hide_border=true" alt="streak"/>
+</div>
+
+---
+
+## 📫 Let’s Connect
+
+- 📧 mshaban0121@gmail.com
+- 📱 8273185786, 8273016786
+- 💬 DM me on LinkedIn, Telegram, or Twitter!
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:e2e8f0,100:34D399&height=90&section=footer"/>
+</div>
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=muhmmadshaban&show_icons=true&locale=en" alt="muhmmadshaban" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=muhmmadshaban&show_icons=true&locale=en&layout=compact" alt="muhmmadshaban" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=muhmmadshaban&" alt="muhmmadshaban" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1500&pause=700&color=34D399&center=true&vCenter=true&width=700&lines=Let's+build+the+future+with+AI+and+creativity!" alt="Footer Typing SVG" />
 </p>
 
 ---
 
-## 📬 Let's Connect
-
-Feel free to reach out for collaboration, internships, or just to say hello!
-
----
-
-© 2025 Muhmmad Shaban. All rights reserved.
+<p align="center" style="color:#34D399;">© 2025 Muhmmad Shaban. All rights reserved.</p>
